@@ -2,7 +2,7 @@ from win32com.client import Dispatch #levano audio speak
 import speech_recognition as sr #levano audio rec
 import datetime 
 import os # screenshot
-import pyautogui #sven screenshot
+import pyautogui #levano screenshot
 from playsound import playsound    
 from tkinter import* 
 import psutil # Bennet CPU
@@ -41,7 +41,7 @@ def greet():
 
 
 
-#====================Sven functions========================#
+#====================Levano functions========================#
     #H = uur M = minuten S = Seconds
 def time(): 
     Time = datetime.datetime.now().strftime('%H:%M:%S')
@@ -111,7 +111,7 @@ def run_code():
 
         output = takecommand()
 
-    #==============LevanoAanroepen van functions=================#  
+    #==============Levano Aanroepen van functions=================#  
         if "time" in output:
             time()
 
